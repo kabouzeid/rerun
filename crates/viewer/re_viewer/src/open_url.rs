@@ -238,7 +238,7 @@ impl ViewerImportUrl {
     }
 
     /// Describes what happens when calling [`Self::open`] with this URL.
-    fn open_description(&self) -> String {
+    pub fn open_description(&self) -> String {
         match self {
             Self::IntraRecordingSelection(_) => "Go to selection".to_owned(),
 
